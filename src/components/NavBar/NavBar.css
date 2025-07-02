@@ -1,0 +1,42 @@
+header{
+    opacity: 0.8;
+    zoom:0.7;
+}
+nav{
+    display: grid;
+    grid-template-columns: 0.2fr 1fr;
+    grid-template-rows: 1fr;
+    color: black;
+    align-items: center;
+    padding: 20px 0;
+    opacity: 1;
+}
+h1{
+    font-style: normal;
+    text-align: center;
+    font-weight:600;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ul li input{
+    font-size: 20px;
+    padding: 25px;
+    height: 40px;
+    width: 400px;
+    text-align: start;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight:500;
+}
+ul .icono-caja{
+    zoom: 1.8;
+}

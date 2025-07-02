@@ -1,0 +1,7 @@
+.botonCustom{
+    padding: 5px;
+    border-radius: 10px;
+    border: solid 1px black;
+    background-color: yellow;
+    font-weight: 600;
+}

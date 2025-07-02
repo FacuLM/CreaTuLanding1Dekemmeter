@@ -1,0 +1,7 @@
+.ulFooter{
+    display: flex;
+    justify-content: space-evenly;
+}
+.ulFooter li a{
+    color: black;
+}
