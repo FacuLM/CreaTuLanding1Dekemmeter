@@ -1,5 +1,5 @@
-import CustomBoton from "../components/DiseñoBoton/CustomBoton";
 import './Section.css'
+import CustomBoton from "../components/DiseñoBoton/CustomBoton";
 const Section = () => {
     return (
     <section>

@@ -15,9 +15,9 @@ const NavBar=()=>{
                 <li>
                     <a href="">PRODUCTOS</a>
                 </li>
-                <li className="icono-caja">
+                <div className="icono-caja">
                     <CarWidget/>
-                </li>
+                </div>
             </ul>
         </nav>
 </header>
