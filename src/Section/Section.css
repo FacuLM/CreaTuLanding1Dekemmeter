@@ -17,7 +17,9 @@ h3{
     height: auto;
 
 }
-.divAutoJuguete img{
-    width: 80%;
+.divAutoJuguete div{
+    width: 60%;
     height: 100%;
+    display: grid;
+    grid-template-rows: 1fr 0.1fr;
 }

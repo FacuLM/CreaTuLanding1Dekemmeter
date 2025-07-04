@@ -1,9 +1,10 @@
 import './CustomBoton.css'
-const CustomBoton = ({nombre}) => {
+const CustomBoton = ({nombre,funcion}) => {
   return (
-        <button className='botonCustom'
-        onClick={console.log("hola")}
-        >{nombre}</button>
+        <button className='botonCustom' onClick={funcion}>
+          {nombre}
+          
+        </button>
   )
 }
 
