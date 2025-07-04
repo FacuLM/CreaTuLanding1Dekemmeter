@@ -1,6 +1,6 @@
 import './Section.css'
 import CustomBoton from "../components/DiseñoBoton/CustomBoton";
-const Section = () => {
+const Section =()=>{
     return (
     <section>
         <div className="divSection">
