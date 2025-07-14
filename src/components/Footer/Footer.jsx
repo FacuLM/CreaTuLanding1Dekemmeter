@@ -3,11 +3,11 @@ const Footer = () => {
     return (
     <footer>
         <ul className="ulFooter">
-        <li><p>Terminos y Condiciones</p></li>
-        <li><p>Politicas de Privacidad</p></li>
-        <li><p>Publicidad</p></li>
-        <li><p>Informacion</p></li>
-        <li><p>Sucursales</p></li>
+        <li><a>Terminos y Condiciones</a></li>
+        <li><a>Politicas de Privacidad</a></li>
+        <li><a>Publicidad</a></li>
+        <li><a>Informacion</a></li>
+        <li><a>Sucursales</a></li>
         </ul>
     </footer>
     )

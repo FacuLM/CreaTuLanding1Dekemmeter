@@ -1,10 +1,6 @@
-import './CustomBoton.css'
-const CustomBoton = ({nombre,funcion}) => {
-  return (
-        <button className='botonCustom' onClick={funcion}>
-          {nombre}
-        </button>
-  )
-}
+import "./CustomBoton.css";
+const CustomBoton = ({ nombre }) => {
+  return <button className="botonCustom">{nombre} +</button>;
+};
 
-export default CustomBoton
+export default CustomBoton;

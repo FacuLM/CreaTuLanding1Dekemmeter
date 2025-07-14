@@ -40,6 +40,9 @@ ul li a{
     font-weight:500;
     zoom:1.1;
 }
+ul li a:hover{
+    color: yellow;
+}
 ul .icono-caja{
     zoom: 1.8;
 }

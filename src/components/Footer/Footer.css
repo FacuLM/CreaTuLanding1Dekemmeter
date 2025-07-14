@@ -1,7 +1,11 @@
+footer{
+    background-color: #191716;
+    padding: 15px;
+}
 .ulFooter{
     display: flex;
     justify-content: space-evenly;
 }
 .ulFooter li a{
-    color: black;
+    color: white;
 }
