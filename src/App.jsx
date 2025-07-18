@@ -1,19 +1,17 @@
-import './App.css'
-import Footer from './components/Footer/Footer'
-import Main from './components/Main/Main'
-import NavBar from './components/NavBar/NavBar'
-import Section from './Section/Section'
-
+import "./App.css";
+import NavBar from "./components/Page/NavBar/NavBar";
+import Main from "./components/Page/Main/Main";
+import Section from "./components/Page/Section/Section";
+import Footer from "./components/Page/Footer/Footer";
 function App() {
-
   return (
     <div>
-      <NavBar/>
-      <Main/>
-      <Section/>
-      <Footer/>
+      <NavBar />
+      <Main />
+      <Section />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
