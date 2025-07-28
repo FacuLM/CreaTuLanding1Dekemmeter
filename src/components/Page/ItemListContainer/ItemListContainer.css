@@ -1,0 +1,13 @@
+.ItemListContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 10px;
+}
+h3 {
+  color: white;
+  font-weight: 600;
+}
+h3:hover {
+  color: yellow;
+}

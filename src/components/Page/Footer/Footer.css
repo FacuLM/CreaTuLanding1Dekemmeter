@@ -1,11 +1,12 @@
-footer{
-    background-color: #191716;
-    padding: 15px;
+footer {
+  background-color: #191716;
+  padding: 15px;
 }
-.ulFooter{
-    display: flex;
-    justify-content: space-evenly;
+.ulFooter {
+  display: flex;
+  justify-content: space-evenly;
 }
-.ulFooter li a{
-    color: white;
+.ulFooter li a {
+  color: white;
+  cursor: pointer;
 }

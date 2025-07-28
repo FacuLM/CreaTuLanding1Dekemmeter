@@ -1,6 +1,5 @@
 import "./CarWidget.css";
 import { GoArchive } from "react-icons/go";
-
 const CarWidget = () => {
   return (
     <div className="relative cursor-pointer p-1.5 bg-gray-100 rounded">

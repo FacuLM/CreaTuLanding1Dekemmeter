@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
-import "./Contenido.css";
 import { productos } from "./ProductosMocks";
+import "./Contenido.css";
 import CustomBoton from "../DiseñoBoton/CustomBoton";
-const Contenido = () => {
+const Zapatillas = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -11,15 +11,16 @@ const Contenido = () => {
     });
     obtenerProductos.then((res) => setItems(res));
   }, []);
-  const productosFiltrados = items.filter((autos) => {
-    autos.categoria.includes("autos");
-    return autos.categoria && autos.categoria.includes("autos");
+
+  const zapatillasFiltradas = items.filter((zapatillas) => {
+    zapatillas.categoria.includes("zapatillas");
+    return zapatillas.categoria && zapatillas.categoria.includes("zapatillas");
   });
   return (
     <div className="divAutoJuguete">
-      {productosFiltrados.map((producto) => {
+      {zapatillasFiltradas.map((producto) => {
         return (
-          <div key={producto.id} className="divContenido">
+          <div className="divContenido">
             <div className="divImg">
               <img src={producto.img} alt="" />
             </div>
@@ -35,4 +36,4 @@ const Contenido = () => {
   );
 };
 
-export default Contenido;
+export default Zapatillas;
