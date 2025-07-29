@@ -45,48 +45,48 @@ export const productos = [
   {
     id: "7",
     categoria: "zapatillas",
-    titulo: "Adidas Campus Rojo",
-    precio: 1250,
-    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314895/adidas-campus-00s-red-copncop-144_720x_rzws4o.jpg",
+    titulo: "Zapatillas Adidas Grand Court Plataforma Mujer",
+    precio: 3000,
+    img: "https://images.precialo.com/products/zapatillas-adidas-grand-court-plataforma-mujer-1/dfdd5129-f570-42ea-9ea0-99279c02dbee.png",
   },
 
   {
     id: "8",
     categoria: "zapatillas",
-    titulo: "Adidas Campus Negro",
-    precio: 1250,
-    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314822/HQ6638_01_standard_dwvneo.jpg",
+    titulo: "Zapatillas adidas Campus Gris Hombre",
+    precio: 3250,
+    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753674815/608160-800-auto_mpeiyl.jpg",
   },
 
   {
     id: "9",
     categoria: "zapatillas",
-    titulo: "Auto Modelo F1 Azul",
-    precio: 1250,
-    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314818/A28558_gSCkGFoK_fmh2qb.jpg",
+    titulo: "Zapatillas adidas Grand Court 2.0",
+    precio: 2000,
+    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753674623/1477255-800-auto_uav1zz.jpg",
   },
 
   {
     id: "10",
     categoria: "zapatillas",
-    titulo: "Auto Modelo F1 Azul",
-    precio: 1250,
+    titulo: "Zapatillas Adidas Response",
+    precio: 1234,
     img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314807/31676385-800-auto_pbnx2u.jpg",
   },
 
   {
     id: "11",
     categoria: "zapatillas",
-    titulo: "Auto Modelo F1 Azul",
-    precio: 1250,
-    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314797/OIP_x0qwms.jpg",
+    titulo: "Zapatillas Puma R22 Urbanas",
+    precio: 1900,
+    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753674705/38649739_0_wpewz4.jpg",
   },
 
   {
     id: "12",
     categoria: "zapatillas",
-    titulo: "Auto Modelo F1 Azul",
-    precio: 1250,
+    titulo: "Zapatillas ASICS GEL-Kayano 14",
+    precio: 1700,
     img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314760/8770110_110_2_z26wrm.jpg",
   },
 ];

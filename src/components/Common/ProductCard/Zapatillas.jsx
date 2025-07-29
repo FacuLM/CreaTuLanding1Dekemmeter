@@ -18,15 +18,15 @@ const Zapatillas = () => {
   });
   return (
     <div className="divAutoJuguete">
-      {zapatillasFiltradas.map((producto) => {
+      {zapatillasFiltradas.map((zapatillasFiltradas) => {
         return (
-          <div className="divContenido">
+          <div key={zapatillasFiltradas.id} className="divContenido">
             <div className="divImg">
-              <img src={producto.img} alt="" />
+              <img src={zapatillasFiltradas.img} alt="" />
             </div>
             <div className="descripcionTexto">
-              <p>$ {producto.precio}</p>
-              <p className="nombreProducto">{producto.titulo}</p>
+              <p>$ {zapatillasFiltradas.precio}</p>
+              <p className="nombreProducto">{zapatillasFiltradas.titulo}</p>
             </div>
             <CustomBoton nombreBoton="Agregar +" />
           </div>

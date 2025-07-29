@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import "./Contenido.css";
-import { productos } from "./ProductosMocks";
+import { productos } from "./productosMocks";
 import CustomBoton from "../DiseñoBoton/CustomBoton";
-const Contenido = () => {
+const AutosJuguetes = () => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -11,21 +11,21 @@ const Contenido = () => {
     });
     obtenerProductos.then((res) => setItems(res));
   }, []);
-  const productosFiltrados = items.filter((autos) => {
+  const autosFiltrados = items.filter((autos) => {
     autos.categoria.includes("autos");
     return autos.categoria && autos.categoria.includes("autos");
   });
   return (
     <div className="divAutoJuguete">
-      {productosFiltrados.map((producto) => {
+      {autosFiltrados.map((autosFiltrados) => {
         return (
-          <div key={producto.id} className="divContenido">
+          <div key={autosFiltrados.id} className="divContenido">
             <div className="divImg">
-              <img src={producto.img} alt="" />
+              <img src={autosFiltrados.img} alt="" />
             </div>
             <div className="descripcionTexto">
-              <p>$ {producto.precio}</p>
-              <p className="nombreProducto">{producto.titulo}</p>
+              <p>$ {autosFiltrados.precio}</p>
+              <p className="nombreProducto">{autosFiltrados.titulo}</p>
             </div>
             <CustomBoton nombreBoton="Agregar +" />
           </div>
@@ -35,4 +35,4 @@ const Contenido = () => {
   );
 };
 
-export default Contenido;
+export default AutosJuguetes;
