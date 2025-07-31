@@ -1,10 +1,9 @@
-import "./Section.css";
 import ItemListContainer from "../ItemListContainer/ItemListContainer";
-const Section = () => {
+const SectionRaiz = () => {
   return (
     <section>
       <ItemListContainer />
     </section>
   );
 };
-export default Section;
+export default SectionRaiz;

@@ -12,12 +12,13 @@ const Zapatillas = () => {
     obtenerProductos.then((res) => setItems(res));
   }, []);
 
-  const zapatillasFiltradas = items.filter((zapatillas) => {
-    zapatillas.categoria.includes("zapatillas");
-    return zapatillas.categoria && zapatillas.categoria.includes("zapatillas");
+  const zapatillasFiltradas = items.filter((zapatilla) => {
+    zapatilla.categoria.includes("zapatillas");
+    return zapatilla.categoria && zapatilla.categoria.includes("zapatillas");
   });
+
   return (
-    <div className="divAutoJuguete">
+    <div className="divJuguete">
       {zapatillasFiltradas.map((zapatillasFiltradas) => {
         return (
           <div key={zapatillasFiltradas.id} className="divContenido">
@@ -28,7 +29,7 @@ const Zapatillas = () => {
               <p>$ {zapatillasFiltradas.precio}</p>
               <p className="nombreProducto">{zapatillasFiltradas.titulo}</p>
             </div>
-            <CustomBoton nombreBoton="Agregar +" />
+            <CustomBoton nombreBoton="Ver más +" />
           </div>
         );
       })}

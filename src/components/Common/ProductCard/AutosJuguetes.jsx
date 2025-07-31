@@ -15,8 +15,9 @@ const AutosJuguetes = () => {
     autos.categoria.includes("autos");
     return autos.categoria && autos.categoria.includes("autos");
   });
+
   return (
-    <div className="divAutoJuguete">
+    <div className="divJuguete">
       {autosFiltrados.map((autosFiltrados) => {
         return (
           <div key={autosFiltrados.id} className="divContenido">
@@ -27,7 +28,7 @@ const AutosJuguetes = () => {
               <p>$ {autosFiltrados.precio}</p>
               <p className="nombreProducto">{autosFiltrados.titulo}</p>
             </div>
-            <CustomBoton nombreBoton="Agregar +" />
+            <CustomBoton nombreBoton="Ver más +" />
           </div>
         );
       })}

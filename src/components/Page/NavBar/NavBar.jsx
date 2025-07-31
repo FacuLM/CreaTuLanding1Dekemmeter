@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import CarWidget from "../../Common/CarWidget/CarWidget";
 import "./NavBar.css";
 const NavBar = () => {
@@ -17,11 +18,16 @@ const NavBar = () => {
             />
           </li>
           <li>
-            <a href="">PRODUCTOS</a>
+            <a href="">AUTOS</a>
           </li>
-          <div className="icono-caja">
-            <CarWidget />
-          </div>
+          <li>
+            <a href="">ZAPATILLAS</a>
+          </li>
+          <Link to="/carrito">
+            <div className="icono-caja">
+              <CarWidget />
+            </div>
+          </Link>
         </ul>
       </nav>
     </header>

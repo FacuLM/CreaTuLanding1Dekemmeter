@@ -1,12 +1,12 @@
 @import "../DiseñoBoton/CustomBoton.css";
-.divAutoJuguete {
+.divJuguete {
   display: grid;
   grid-template-columns: 0.5fr 0.5fr 0.5fr;
   grid-template-rows: auto;
   justify-items: center;
   gap: 10px;
 }
-.divAutoJuguete .divContenido {
+.divJuguete .divContenido {
   width: 60%;
   display: grid;
   grid-template-rows: 1fr 0.3fr 0.3fr;
@@ -18,22 +18,22 @@
   background-color: white;
   cursor: pointer;
 }
-.divAutoJuguete .divContenido .divImg {
+.divJuguete .divContenido .divImg {
   margin-top: 5px;
   width: 200px;
   height: 170px;
   overflow: hidden;
 }
-.divAutoJuguete .divContenido .divImg img {
+.divJuguete .divContenido .divImg img {
   width: 100%;
   height: 100%;
   border-radius: 5%;
   transition: 0.2s;
 }
-.divAutoJuguete .divContenido .divImg:hover img {
+.divJuguete .divContenido .divImg:hover img {
   transform: scale(1.1);
 }
-.divAutoJuguete .divContenido .descripcionTexto {
+.divJuguete .divContenido .descripcionTexto {
   font-size: 17px;
   margin: 0 5px;
 }
