@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import { productos } from "./ProductosMocks";
 import "./Contenido.css";
 import CustomBoton from "../DiseñoBoton/CustomBoton";
+import { Link, useParams } from "react-router";
 const Zapatillas = () => {
   const [items, setItems] = useState([]);
+  const { zapatillas } = useParams();
 
   useEffect(() => {
     const obtenerProductos = new Promise((resuelva) => {
@@ -29,7 +31,9 @@ const Zapatillas = () => {
               <p>$ {zapatillasFiltradas.precio}</p>
               <p className="nombreProducto">{zapatillasFiltradas.titulo}</p>
             </div>
-            <CustomBoton nombreBoton="Ver más +" />
+            <Link to={`/detalle/${zapatillasFiltradas.id}`}>
+              <CustomBoton nombreBoton="Ver más +" />
+            </Link>
           </div>
         );
       })}

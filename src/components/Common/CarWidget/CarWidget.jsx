@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import "./CarWidget.css";
 import { GoArchive } from "react-icons/go";
 const CarWidget = () => {

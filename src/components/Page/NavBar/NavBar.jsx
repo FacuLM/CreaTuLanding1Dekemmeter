@@ -5,11 +5,13 @@ const NavBar = () => {
   return (
     <header>
       <nav>
-        <h1>
-          Mercado
-          <br />
-          Pepito
-        </h1>
+        <Link to="/">
+          <h1>
+            Mercado
+            <br />
+            Pepito
+          </h1>
+        </Link>
         <ul>
           <li>
             <input
@@ -18,16 +20,14 @@ const NavBar = () => {
             />
           </li>
           <li>
-            <a href="">AUTOS</a>
+            <Link to="/Categoria/autos">AUTOS</Link>
           </li>
           <li>
-            <a href="">ZAPATILLAS</a>
+            <Link to="/Categoria/zapatillas">ZAPATILLAS</Link>
           </li>
-          <Link to="/carrito">
-            <div className="icono-caja">
-              <CarWidget />
-            </div>
-          </Link>
+          <div className="icono-caja">
+            <CarWidget />
+          </div>
         </ul>
       </nav>
     </header>
