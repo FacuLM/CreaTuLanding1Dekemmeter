@@ -2,10 +2,9 @@ import { useEffect, useState } from "react";
 import { productos } from "./ProductosMocks";
 import "./Contenido.css";
 import CustomBoton from "../DiseñoBoton/CustomBoton";
-import { Link, useParams } from "react-router";
+import { Link } from "react-router";
 const Zapatillas = () => {
   const [items, setItems] = useState([]);
-  const { zapatillas } = useParams();
 
   useEffect(() => {
     const obtenerProductos = new Promise((resuelva) => {
