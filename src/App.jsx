@@ -6,16 +6,19 @@ import Home from "./components/Page/Home";
 import ProductoDetalle from "./components/Page/ProductoDetalle/ProductoDetalle";
 import AutosJuguetes from "./components/Common/ProductCard/AutosJuguetes";
 import Zapatillas from "./components/Common/ProductCard/Zapatillas";
+import CarritoContextoProvider from "./context/CarritoContext";
 function App() {
   return (
     <BrowserRouter>
       <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/detalle/:id" element={<ProductoDetalle />} />
-        <Route path="/categoria/zapatillas" element={<Zapatillas />} />
-        <Route path="/categoria/autos" element={<AutosJuguetes />} />
-      </Routes>
+      <CarritoContextoProvider>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/detalle/:id" element={<ProductoDetalle />} />
+          <Route path="/categoria/zapatillas" element={<Zapatillas />} />
+          <Route path="/categoria/autos" element={<AutosJuguetes />} />
+        </Routes>
+      </CarritoContextoProvider>
       <Footer />
     </BrowserRouter>
   );

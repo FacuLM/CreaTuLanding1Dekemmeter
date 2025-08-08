@@ -1,6 +1,23 @@
+.productosDetalladoscss {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 2fr;
+  justify-items: center;
+  margin: 15px;
+}
 .imgProductoDetallado {
-  width: 100%;
+  width: 450px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 6px;
 }
 .imgProductoDetallado img {
-  width: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+.imgProductoDetallado img:hover {
+  transform: scale(1.06);
+  border-radius: 6px;
 }
