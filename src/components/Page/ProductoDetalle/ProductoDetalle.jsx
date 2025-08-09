@@ -1,9 +1,11 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { productos } from "../../Common/ProductCard/ProductosMocks";
 import { useParams } from "react-router";
 import "./ProductoDetalle.css";
 import CustomBoton from "../../Common/DiseñoBoton/CustomBoton";
+import { CarritoContexto } from "../../../context/CarritoContext";
 const ProductoDetalle = () => {
+  const { agregarAlCarrito } = useContext(CarritoContexto);
   const { id } = useParams();
   const [producto, setProducto] = useState({});
   useEffect(() => {
@@ -20,7 +22,12 @@ const ProductoDetalle = () => {
         <div>
           <h2>{producto?.titulo}</h2>
           <h2>{producto?.precio}</h2>
-          <CustomBoton nombreBoton="Agregar al carrito" />
+          <CustomBoton
+            nombreBoton="Agregar al carrito"
+            onClick={() => {
+              agregarAlCarrito(producto);
+            }}
+          />
         </div>
       </div>
     </div>

@@ -1,8 +1,25 @@
-import React, { createContext } from "react";
+import { createContext, useState } from "react";
 
-const CarritoContexto = createContext();
+export const CarritoContexto = createContext();
+
 const CarritoContextoProvider = ({ children }) => {
-  return <CarritoContexto.Provider>{children}</CarritoContexto.Provider>;
+  const [carrito, setCarrito] = useState([]);
+  const agregarAlCarrito = (producto) => {
+    console.log(producto);
+  };
+  const removerDelCarrito = () => {};
+
+  return (
+    <CarritoContexto.Provider
+      value={{
+        carrito: carrito,
+        agregarAlCarrito: agregarAlCarrito,
+        removerDelCarrito: removerDelCarrito,
+      }}
+    >
+      {children}
+    </CarritoContexto.Provider>
+  );
 };
 
 export default CarritoContextoProvider;

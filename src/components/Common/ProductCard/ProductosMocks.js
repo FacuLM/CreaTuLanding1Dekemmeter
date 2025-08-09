@@ -85,8 +85,8 @@ export const productos = [
   {
     id: "12",
     categoria: "zapatillas",
-    titulo: "Zapatillas ASICS GEL-Kayano 14",
+    titulo: "Zapatillas Hombre Puma Club II",
     precio: 1700,
-    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1753314760/8770110_110_2_z26wrm.jpg",
+    img: "https://res.cloudinary.com/dfypml63z/image/upload/v1754775968/marcaspuma397447-07-blanco1jpeg_0_3_dwpkhy.jpg",
   },
 ];
