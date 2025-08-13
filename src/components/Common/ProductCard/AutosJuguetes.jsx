@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
+import { productos } from "./ProductosMocks";
 import "./Contenido.css";
-import { productos } from "./productosMocks";
 import CustomBoton from "../DiseñoBoton/CustomBoton";
 import { Link } from "react-router";
 const AutosJuguetes = () => {
@@ -19,17 +19,17 @@ const AutosJuguetes = () => {
 
   return (
     <div className="divJuguete">
-      {autosFiltrados.map((autosFiltrados) => {
+      {autosFiltrados.map((Filtrados) => {
         return (
-          <div key={autosFiltrados.id} className="divContenido">
+          <div key={Filtrados.id} className="divContenido">
             <div className="divImg">
-              <img src={autosFiltrados.img} alt="" />
+              <img src={Filtrados.img} alt="" />
             </div>
             <div className="descripcionTexto">
-              <p>$ {autosFiltrados.precio}</p>
-              <p className="nombreProducto">{autosFiltrados.titulo}</p>
+              <p>$ {Filtrados.precio}</p>
+              <p className="nombreProducto">{Filtrados.titulo}</p>
             </div>
-            <Link to={`/detalle/${autosFiltrados.id}`}>
+            <Link to={`/detalle/${Filtrados.id}`}>
               <CustomBoton nombreBoton="Ver más +" />
             </Link>
           </div>

@@ -10,8 +10,8 @@ import CarritoContextoProvider from "./context/CarritoContext";
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
       <CarritoContextoProvider>
+        <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detalle/:id" element={<ProductoDetalle />} />

@@ -6,7 +6,7 @@
   justify-items: center;
   gap: 10px;
 }
-.divJuguete .divContenido {
+.divContenido {
   width: 60%;
   display: grid;
   grid-template-rows: 1fr 0.3fr 0.3fr;
@@ -17,23 +17,24 @@
   border-radius: 2%;
   background-color: white;
   cursor: pointer;
+  margin: 20px;
 }
-.divJuguete .divContenido .divImg {
+.divContenido .divImg {
   margin-top: 5px;
   width: 200px;
   height: 170px;
   overflow: hidden;
 }
-.divJuguete .divContenido .divImg img {
+.divContenido .divImg img {
   width: 100%;
   height: 100%;
   border-radius: 5%;
   transition: 0.2s;
 }
-.divJuguete .divContenido .divImg:hover img {
+.divContenido .divImg:hover img {
   transform: scale(1.1);
 }
-.divJuguete .divContenido .descripcionTexto {
+.divContenido .descripcionTexto {
   font-size: 17px;
   margin: 0 5px;
 }

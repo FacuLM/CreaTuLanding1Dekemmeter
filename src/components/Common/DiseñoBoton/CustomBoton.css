@@ -1,14 +1,16 @@
-.botonCustom{
-    padding: 5px;
-    border-radius: 6px;
-    border: solid 1px black;
-    background-color: yellow;
-    font-weight:500;
-    font-size: 14px;
-    margin: 5px;
+.botonCustom {
+  padding: 5px;
+  border-radius: 6px;
+  border: solid 1px black;
+  background-color: yellow;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 5px;
+  width: 150px;
+  height: 40px;
 }
-.botonCustom:hover{
-    background-color: black;
-    color: white;
-    cursor: pointer;
+.botonCustom:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }

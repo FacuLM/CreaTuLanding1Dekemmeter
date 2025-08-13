@@ -4,8 +4,8 @@ export const CarritoContexto = createContext();
 
 const CarritoContextoProvider = ({ children }) => {
   const [carrito, setCarrito] = useState([]);
-  const agregarAlCarrito = (producto) => {
-    console.log(producto);
+  const agregarAlCarrito = (product) => {
+    setCarrito([...carrito, product]);
   };
   const removerDelCarrito = () => {};
 
