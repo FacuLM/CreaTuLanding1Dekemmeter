@@ -26,7 +26,9 @@ const NavBar = () => {
             <Link to="/Categoria/zapatillas">ZAPATILLAS</Link>
           </li>
           <div className="icono-caja">
-            <CarWidget />
+            <Link to="/carrito">
+              <CarWidget />
+            </Link>
           </div>
         </ul>
       </nav>

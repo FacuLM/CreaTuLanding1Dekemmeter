@@ -1,0 +1,46 @@
+.divCima {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: right;
+  align-items: center;
+  border-bottom: solid black 1px;
+  border-radius: 5px;
+  padding: 1%;
+}
+.divCima h2 {
+  font-size: 30px;
+  font-family: "Bebas Neue", sans-serif;
+  border: solid black 1px;
+  border-radius: 5px;
+  padding: 0 50px 0 50px;
+  background-color: white;
+}
+.divCarritoCompras {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr;
+  justify-items: center;
+  align-items: center;
+  gap: 30px;
+}
+.imgCarrito {
+  width: 200px;
+  height: 200px;
+  margin: 15px;
+}
+.imgCarrito img {
+  width: 100%;
+  height: 100%;
+  border-radius: 4%;
+}
+.ultdiv {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 30px;
+}
+.ultdiv .precio {
+  text-align: right;
+}

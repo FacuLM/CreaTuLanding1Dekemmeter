@@ -7,6 +7,8 @@ import ProductoDetalle from "./components/Page/ProductoDetalle/ProductoDetalle";
 import AutosJuguetes from "./components/Common/ProductCard/AutosJuguetes";
 import Zapatillas from "./components/Common/ProductCard/Zapatillas";
 import CarritoContextoProvider from "./context/CarritoContext";
+import CarritoCompras from "./components/Page/CarritoCompras/CarritoCompras";
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,6 +19,7 @@ function App() {
           <Route path="/detalle/:id" element={<ProductoDetalle />} />
           <Route path="/categoria/zapatillas" element={<Zapatillas />} />
           <Route path="/categoria/autos" element={<AutosJuguetes />} />
+          <Route path="/carrito" element={<CarritoCompras />} />
         </Routes>
       </CarritoContextoProvider>
       <Footer />

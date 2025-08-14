@@ -4,6 +4,7 @@ import { GoArchive } from "react-icons/go";
 import { CarritoContexto } from "../../../context/CarritoContext";
 const CarWidget = () => {
   const { carrito } = useContext(CarritoContexto);
+  console.log(carrito);
   return (
     <div className="relative cursor-pointer p-1.5 bg-gray-100 rounded">
       <GoArchive />
