@@ -14,6 +14,7 @@ const Counter = ({ producto }) => {
   const agregar = () => {
     let productoCantidad = { ...producto, cantidad: contador };
     agregarAlCarrito(productoCantidad);
+    console.log(productoCantidad);
   };
 
   return (
@@ -22,7 +23,11 @@ const Counter = ({ producto }) => {
         <h2>Cantidad: {contador}</h2>
       </div>
       <div className="botonesCounter">
-        <button className="botonCustom" onClick={sumar}>
+        <button
+          className="botonCustom"
+          onClick={sumar}
+          disabled={contador === 10}
+        >
           Agregar
         </button>
         <button

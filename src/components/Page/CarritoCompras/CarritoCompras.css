@@ -36,11 +36,32 @@
 }
 .ultdiv {
   display: grid;
-  grid-template-columns: 1.7fr 1fr;
+  grid-template-columns: 150px 150px;
   grid-template-rows: 1fr 1fr;
   align-items: center;
   gap: 30px;
 }
 .ultdiv .precio {
   text-align: right;
+  font-weight: 600;
+}
+.ultdiv .cantidad {
+  text-align: center;
+  margin: 5px;
+  border-radius: 50%;
+  background-color: bisque;
+  font-weight: 700;
+}
+.finalDivCompras {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  justify-items: center;
+  align-items: center;
+}
+.total {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  font-size: 30px;
 }
