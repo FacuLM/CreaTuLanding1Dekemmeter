@@ -29,6 +29,10 @@ const CarritoContextoProvider = ({ children }) => {
     }, 0);
     return totalCantidad;
   };
+  const confirmarCompra = () => {
+    let cantidadTotal = { cantidadCarrito };
+    alert("Compraste" + cantidadTotal);
+  };
   return (
     <CarritoContexto.Provider
       value={{
@@ -38,6 +42,7 @@ const CarritoContextoProvider = ({ children }) => {
         vaciarCarrito,
         cuentaTotal,
         cantidadCarrito,
+        confirmarCompra,
       }}
     >
       {children}

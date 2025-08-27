@@ -20,10 +20,10 @@ const NavBar = () => {
             />
           </li>
           <li>
-            <Link to="/Categoria/autos">AUTOS</Link>
+            <Link to="/categoria/autos">AUTOS</Link>
           </li>
           <li>
-            <Link to="/Categoria/zapatillas">ZAPATILLAS</Link>
+            <Link to="/categoria/zapatillas">ZAPATILLAS</Link>
           </li>
           <div className="icono-caja">
             <Link to="/carrito">

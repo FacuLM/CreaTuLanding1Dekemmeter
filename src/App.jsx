@@ -4,10 +4,9 @@ import NavBar from "./components/Page/NavBar/NavBar";
 import Footer from "./components/Page/Footer/Footer";
 import Home from "./components/Page/Home";
 import ProductoDetalle from "./components/Page/ProductoDetalle/ProductoDetalle";
-import AutosJuguetes from "./components/Common/ProductCard/AutosJuguetes";
-import Zapatillas from "./components/Common/ProductCard/Zapatillas";
 import CarritoContextoProvider from "./context/CarritoContext";
 import CarritoCompras from "./components/Page/CarritoCompras/CarritoCompras";
+import ItemListContainer from "./components/Page/ItemListContainer/ItemListContainer";
 
 function App() {
   return (
@@ -17,8 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/detalle/:id" element={<ProductoDetalle />} />
-          <Route path="/categoria/zapatillas" element={<Zapatillas />} />
-          <Route path="/categoria/autos" element={<AutosJuguetes />} />
+          <Route path="/categoria/:catalogo" element={<ItemListContainer />} />
           <Route path="/carrito" element={<CarritoCompras />} />
         </Routes>
       </CarritoContextoProvider>

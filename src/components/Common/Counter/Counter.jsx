@@ -3,7 +3,7 @@ import { CarritoContexto } from "../../../context/CarritoContext";
 import "../Counter/Counter.css";
 const Counter = ({ producto }) => {
   const { agregarAlCarrito } = useContext(CarritoContexto);
-  const [contador, setContador] = useState(1);
+  const [contador, setContador] = useState(0);
   const sumar = () => {
     setContador(contador + 1);
   };
@@ -14,9 +14,10 @@ const Counter = ({ producto }) => {
   const agregar = () => {
     let productoCantidad = { ...producto, cantidad: contador };
     agregarAlCarrito(productoCantidad);
-    console.log(productoCantidad);
+    if (productoCantidad === 0) {
+      alert("No tienes ningun producto en el carrito");
+    }
   };
-
   return (
     <div>
       <div>
@@ -28,12 +29,12 @@ const Counter = ({ producto }) => {
           onClick={sumar}
           disabled={contador === 10}
         >
-          Agregar
+          Sumar
         </button>
         <button
           className="botonCustom"
           onClick={restar}
-          disabled={contador === 1}
+          disabled={contador === 0}
         >
           Eliminar
         </button>
@@ -42,6 +43,7 @@ const Counter = ({ producto }) => {
           onClick={() => {
             agregar(contador);
           }}
+          disabled={contador === 0}
         >
           Agregar al carrito
         </button>
