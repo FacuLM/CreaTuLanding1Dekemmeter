@@ -1,15 +1,12 @@
 import { useContext } from "react";
 import { CarritoContexto } from "../../../context/CarritoContext";
 import "../CarritoCompras/CarritoCompras.css";
+import { Link } from "react-router";
 const CarritoCompras = () => {
-  const {
-    carrito,
-    vaciarCarrito,
-    removerDelCarrito,
-    cuentaTotal,
-    confirmarCompra,
-  } = useContext(CarritoContexto);
+  const { carrito, vaciarCarrito, removerDelCarrito, cuentaTotal } =
+    useContext(CarritoContexto);
   let resultadoCompra = cuentaTotal();
+
   if (carrito <= 0) {
     return (
       <div className="noHayProductos">
@@ -19,11 +16,6 @@ const CarritoCompras = () => {
   } else {
     return (
       <div className="divCarritoComprasCima">
-        <div className="divCima">
-          <button className="botonCustom" onClick={vaciarCarrito}>
-            Vaciar Carrito
-          </button>
-        </div>
         {carrito.map((producto) => {
           return (
             <div key={producto.id} className="divCarritoCompras">
@@ -52,10 +44,12 @@ const CarritoCompras = () => {
             <p>$ {resultadoCompra}</p>
           </div>
           <div>
-            <button className="botonCustom" onClick={confirmarCompra}>
-              Confirmar
+            <button className="botonCustom">
+              <Link to="/checkout">Siguiente</Link>
             </button>
-            <button className="botonCustom">Cancelar</button>
+            <button className="botonCustom" onClick={vaciarCarrito}>
+              Cancelar
+            </button>
           </div>
         </div>
       </div>

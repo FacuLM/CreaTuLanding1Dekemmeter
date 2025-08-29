@@ -21,8 +21,6 @@
   grid-template-rows: 1fr;
   justify-items: right;
   align-items: center;
-  border-bottom: solid black 1px;
-  border-radius: 5px;
   padding: 1%;
 }
 .divCima h2 {

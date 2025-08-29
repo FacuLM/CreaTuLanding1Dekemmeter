@@ -1,0 +1,16 @@
+form {
+  margin: 60px;
+}
+.divForm {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr, 0.5fr, 0.5fr, 0.5fr, 0.5fr;
+  gap: 50px;
+  align-items: center;
+  justify-items: center;
+  align-content: space-between;
+}
+.divForm input {
+  border: solid black 1px;
+  border-radius: 5%;
+}

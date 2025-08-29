@@ -4,27 +4,35 @@ import CustomBoton from "../../Common/DiseñoBoton/CustomBoton";
 import { useParams, Link } from "react-router";
 import { useEffect, useState } from "react";
 import { baseDatos } from "../../../fireBaseConfig";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 const ItemListContainer = () => {
-  const { producto, setProducto } = useState([]);
-
+  const [producto, setProducto] = useState([]);
   const { catalogo } = useParams();
 
   useEffect(() => {
     let todosLosProductos = collection(baseDatos, "productosEnStock");
-    let traerLosProductos = getDocs(todosLosProductos);
+    let preguntarPorProducto = todosLosProductos;
+
+    if (catalogo) {
+      let productosFiltrados = query(
+        todosLosProductos,
+        where("categoria", "==", catalogo)
+      );
+      preguntarPorProducto = productosFiltrados;
+    }
+    let traerLosProductos = getDocs(preguntarPorProducto);
     traerLosProductos.then((respuesta) => {
       let objetos = respuesta.docs.map((elemento) => {
         return { id: elemento.id, ...elemento.data() };
       });
-      console.log(objetos);
       setProducto(objetos);
     });
   }, [catalogo]);
+
   return (
     <div className="ItemListContainer">
-      {/* <div className="divJuguete">
-        {zapatillasFiltradas.map((filtrados) => {
+      <div className="divJuguete">
+        {producto.map((filtrados) => {
           return (
             <div key={filtrados.id} className="divContenido">
               <div className="divImg">
@@ -40,7 +48,7 @@ const ItemListContainer = () => {
             </div>
           );
         })}
-      </div> */}
+      </div>
     </div>
   );
 };

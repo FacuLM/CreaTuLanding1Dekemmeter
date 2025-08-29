@@ -12,10 +12,12 @@ const Counter = ({ producto }) => {
   };
 
   const agregar = () => {
-    let productoCantidad = { ...producto, cantidad: contador };
-    agregarAlCarrito(productoCantidad);
-    if (productoCantidad === 0) {
+    if (contador === 0) {
       alert("No tienes ningun producto en el carrito");
+    } else {
+      let productoCantidad = { ...producto, cantidad: contador };
+      agregarAlCarrito(productoCantidad);
+      setContador(0);
     }
   };
   return (
@@ -43,7 +45,6 @@ const Counter = ({ producto }) => {
           onClick={() => {
             agregar(contador);
           }}
-          disabled={contador === 0}
         >
           Agregar al carrito
         </button>
