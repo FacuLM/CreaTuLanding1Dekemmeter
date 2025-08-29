@@ -44,9 +44,9 @@ const CarritoCompras = () => {
             <p>$ {resultadoCompra}</p>
           </div>
           <div>
-            <button className="botonCustom">
-              <Link to="/checkout">Siguiente</Link>
-            </button>
+            <Link to="/checkout">
+              <button className="botonCustom">Siguiente</button>
+            </Link>
             <button className="botonCustom" onClick={vaciarCarrito}>
               Cancelar
             </button>

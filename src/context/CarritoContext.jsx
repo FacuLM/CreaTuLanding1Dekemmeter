@@ -11,7 +11,6 @@ const CarritoContextoProvider = ({ children }) => {
 
   const vaciarCarrito = () => {
     setCarrito([]);
-    alert("Se eliminaron los productos");
   };
 
   const removerDelCarrito = (id) => {
@@ -30,10 +29,6 @@ const CarritoContextoProvider = ({ children }) => {
     }, 0);
     return totalCantidad;
   };
-  const confirmarCompra = () => {
-    let cantidadTotal = { cantidadCarrito };
-    alert("Compraste");
-  };
   return (
     <CarritoContexto.Provider
       value={{
@@ -43,7 +38,6 @@ const CarritoContextoProvider = ({ children }) => {
         vaciarCarrito,
         cuentaTotal,
         cantidadCarrito,
-        confirmarCompra,
       }}
     >
       {children}

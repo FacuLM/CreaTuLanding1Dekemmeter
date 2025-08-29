@@ -1,12 +1,12 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 const firebaseConfig = {
-  apiKey: "AIzaSyAoJ7ynYvlKgQWwEAwdCicQ1NmohfROPsc",
-  authDomain: "proyectoreact-dekemmeter.firebaseapp.com",
-  projectId: "proyectoreact-dekemmeter",
-  storageBucket: "proyectoreact-dekemmeter.firebasestorage.app",
-  messagingSenderId: "51818611179",
-  appId: "1:51818611179:web:dba1a1fd9181b56e9999ae",
+  apiKey: import.meta.env.VITE_API_KEY,
+  authDomain: import.meta.env.VITE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_PROYECT_ID,
+  storageBucket: import.meta.env.VITE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_APP_ID,
 };
 
 const backendProductos = initializeApp(firebaseConfig);
